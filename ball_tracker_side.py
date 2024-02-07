@@ -4,11 +4,10 @@ import time
 
 
 def track_tennis_ball():
-    cap = cv2.VideoCapture(0)  
+    cap = cv2.VideoCapture(1)  
 
     ball_position = None
     tail = []
-
 
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
 
@@ -42,7 +41,7 @@ def track_tennis_ball():
             for i in range(len(tail) - 1, 0, -1):
                 point, timestamp = tail[i]
                 cv2.line(frame, tail[i - 1][0], point, (0, 0, 255), 2)  
-                if time.time() - timestamp > 1:
+                if time.time() - timestamp > 2:
                     tail.pop(i - 1)
 
             # Update the histogram for adaptive color range
@@ -74,12 +73,15 @@ def track_tennis_ball():
 
       
         combined_display = np.hstack((frame, cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)))
-        cv2.imshow("Tennis Ball Tracker", combined_display)
+        cv2.imshow("Tennis Ball Tracker Camera 2", combined_display)
 
+      
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
+   
     cap.release()
     cv2.destroyAllWindows()
+
 
 track_tennis_ball()
