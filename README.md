@@ -13,16 +13,18 @@ This Python script utilizes OpenCV to track a tennis ball in real-time using a w
 
 Install OpenCV and NumPy using pip:
 
+```
 pip install opencv-python numpy
-
+```
 
 ## Usage
 
 1. Make sure your webcam(s) are connected and functioning properly.
 2. Run the script using the following command:
 
+```
 python tennis_ball_tracker.py
-
+```
 
 3. Press 'q' to quit the program.
 
