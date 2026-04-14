@@ -62,13 +62,6 @@ The system detects the ball, predicts its path, and moves a robotic arm to inter
 
 ---
 
-## 🎥 Demo Video
-[Watch Demo Here](INSERT_VIDEO_LINK_HERE)
-
-*(Include a short screen recording demonstrating tracking + arm movement with audio explanation.)*
-
----
-
 ## 🚀 Summary
 This project demonstrates the integration of:
 - Computer Vision  
