@@ -1,3 +1,10 @@
+# 🏓 AI-Powered Robotic Ping Pong Arm
+
+## 🔗 Project Link
+GitHub Repository: https://github.com/JayPat2005/PingPongArm
+
+---
+
 ## 📌 Project Overview
 This project is a robotic system designed to track and hit a ping pong ball in real time. It combines **computer vision, physics-based trajectory prediction, and robotics control** to create an automated ping pong playing arm.
 
@@ -59,6 +66,13 @@ The system detects the ball, predicts its path, and moves a robotic arm to inter
 - **Prediction inaccuracies** → Refined physics calculations  
 - **Motor precision issues** → Calibrated stepper motors  
 - **Timing delays** → Optimized real-time response  
+
+---
+
+## 🎥 Demo Video
+[Watch Demo Here](INSERT_VIDEO_LINK_HERE)
+
+*(Include a short screen recording demonstrating tracking + arm movement with audio explanation.)*
 
 ---
 
