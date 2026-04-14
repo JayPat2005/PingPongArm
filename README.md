@@ -1,38 +1,79 @@
-# Tennis Ball Tracker
+## 📌 Project Overview
+This project is a robotic system designed to track and hit a ping pong ball in real time. It combines **computer vision, physics-based trajectory prediction, and robotics control** to create an automated ping pong playing arm.
 
-This Python script utilizes OpenCV to track a tennis ball in real-time using a webcam. It detects the tennis ball based on its color and calculates its position and velocity. The script contains two functions:
+The system detects the ball, predicts its path, and moves a robotic arm to intercept and return the ball accurately.
 
-1. `track_tennis_ball()`: Tracks the tennis ball using the primary webcam (index 0).
-2. `track_tennis_ball_top()`: Tracks the tennis ball using a secondary webcam (index 1), positioned above the playing area.
+---
 
-## Prerequisites
+## ⚙️ What It Does
+- Tracks a ping pong ball using camera-based computer vision  
+- Predicts the ball’s trajectory using physics modeling  
+- Calculates arm movement using inverse kinematics  
+- Moves a robotic arm to hit the ball in real time  
 
-- Python 3.x
-- OpenCV (cv2)
-- NumPy
+---
 
-Install OpenCV and NumPy using pip:
+## 🛠️ How It Was Built
 
-pip install opencv-python numpy
+### 1. Computer Vision (Python)
+- Used masking and filtering to isolate the ping pong ball  
+- Extracted position coordinates frame-by-frame  
+- Implemented Single Object Tracking (SOT)  
 
+### 2. Trajectory Prediction
+- Applied motion physics to estimate ball path  
+- Predicted future position before impact  
 
-## Usage
+### 3. Robotics System
+- Built a 3-foot robotic arm  
+- Controlled using a Raspberry Pi  
+- Integrated stepper motors and drivers  
 
-1. Make sure your webcam(s) are connected and functioning properly.
-2. Run the script using the following command:
+### 4. Inverse Kinematics
+- Calculated joint angles required to reach target position  
+- Enabled precise positioning for ball contact  
 
-python tennis_ball_tracker.py
+---
 
+## 💻 Tools & Technologies
+- Python  
+- Raspberry Pi  
+- Stepper Motors + Motor Drivers  
+- Matplotlib  
+- Computer Vision (OpenCV concepts)  
+- Custom Mechanical Design  
 
-3. Press 'q' to quit the program.
+---
 
-## Functionality
+## 🔄 Development Process
+1. Built initial ball detection system  
+2. Implemented trajectory prediction model  
+3. Designed and assembled robotic arm  
+4. Integrated hardware and software  
+5. Tested and optimized accuracy  
 
-- The script detects the tennis ball based on its color (green) using HSV color space.
-- It tracks the position of the tennis ball in real-time.
-- The position and velocity (in the x and y directions) of the tennis ball are displayed on the video feed.
-- The script can handle multiple tennis balls simultaneously.
+---
 
-## License
+## 🧠 Challenges & Fixes
+- **Detection noise** → Improved masking and filtering  
+- **Prediction inaccuracies** → Refined physics calculations  
+- **Motor precision issues** → Calibrated stepper motors  
+- **Timing delays** → Optimized real-time response  
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## 🎥 Demo Video
+[Watch Demo Here](INSERT_VIDEO_LINK_HERE)
+
+*(Include a short screen recording demonstrating tracking + arm movement with audio explanation.)*
+
+---
+
+## 🚀 Summary
+This project demonstrates the integration of:
+- Computer Vision  
+- Real-Time Systems  
+- Robotics  
+- Embedded Systems  
+
+It highlights the ability to combine software and hardware to solve a real-world problem involving motion tracking and automation.
