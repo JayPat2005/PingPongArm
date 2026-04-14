@@ -70,7 +70,7 @@ The system detects the ball, predicts its path, and moves a robotic arm to inter
 ---
 
 ## 🎥 Demo Video
-[Watch Demo Here](**https://youtu.be/_fZSaP1G6ps**)
+[Watch Demo Here]([**https://youtu.be/_fZSaP1G6ps**])
 
 *(Include a short screen recording demonstrating tracking + arm movement with audio explanation.)*
 
