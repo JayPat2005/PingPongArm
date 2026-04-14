@@ -1,4 +1,4 @@
-# 🏓 AI-Powered Robotic Ping Pong Arm
+# 🏓 Robotic Ping Pong Arm
 
 ## 🔗 Project Link
 GitHub Repository: https://github.com/JayPat2005/PingPongArm
@@ -70,7 +70,7 @@ The system detects the ball, predicts its path, and moves a robotic arm to inter
 ---
 
 ## 🎥 Demo Video
-[Watch Demo Here](INSERT_VIDEO_LINK_HERE)
+[Watch Demo Here](**https://youtu.be/_fZSaP1G6ps**)
 
 *(Include a short screen recording demonstrating tracking + arm movement with audio explanation.)*
 
